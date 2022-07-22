@@ -1,0 +1,21 @@
+<h2>{{judul.toUpperCase()}}.</h2>
+<p>Component pertama Angular</p>
+<p>{{count}}</p>
+<img [src]="gambar" width="100px" height="125px">
+
+<div *ngIf="aktif; else noEdit">
+    <p [contentEditable]="aktif">Kamu bisa  edit text berikut ini</p>
+</div>
+<ng-template #noEdit>
+    <p>text berikut hanya bisa bisa dibaca, tekan tombolnya</p>
+</ng-template>
+
+<br>
+<button (click)="onEditClick()">Edit</button>
+<button (click)="Increment()">Count</button>
+<p>
+    <button type="button" (click)="sayMessage('Angular')">Angular</button>
+    <button type="button" (click)="sayMessage('Vue.js')">Vue.js</button>
+    <button type="button" (click)="sayMessage('React')">React</button>
+</p>
+
