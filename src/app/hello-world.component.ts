@@ -8,7 +8,7 @@ import { Logger } from './logger.service'
 })
 export class HelloWorldComponent {
     judul = "Hello Angular."
-    gambar = 'assets/images/erisriso.jpg'
+    gambar = 'assets/images/langit.JPG'
     aktif = false
     count = 0
 
